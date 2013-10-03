@@ -1,0 +1,15 @@
+@media screen and (max-width: 980px) {
+	#body_wrapper {
+		width: 100%;
+		padding: 0;
+	}
+	body {
+		padding: 0 10px;
+	}
+	#navBanner .bnrImg {
+		min-width: 100%;
+	}
+	#navBanner {
+		width: 65%;
+	}
+}
