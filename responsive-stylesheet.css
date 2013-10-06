@@ -6,10 +6,14 @@
 	body {
 		padding: 0 10px;
 	}
-	#navBanner .bnrImg {
-		min-width: 100%;
-	}
 	#navBanner {
-		width: 65%;
+		width: 65%;		
 	}
+	#gridTop #formContainer {
+		position: relative;
+		z-index: 999;
+	}
+}
+@media screen and (max-width: 930px) {
+
 }
