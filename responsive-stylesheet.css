@@ -13,7 +13,167 @@
 		position: relative;
 		z-index: 999;
 	}
+	#gridTop {
+		padding-right: 50px;
+	}
+	.bnrDesc .Custom_Bold {
+		font-size: 17px;
+	}
+	#navBanner .bannerSection {
+		height: 100%;
+	}
 }
-@media screen and (max-width: 930px) {
-
+@media screen and (min-width: 775px) and (max-width: 930px) {
+	#thumbnail, .thumbholder, #navBanner .thumblist, #navBanner .thumbholder {
+		top: 0 !important;
+		width: 125px !important;
+		left: 0;
+	}
+	#navBanner .thumblist li {
+		float: right;
+		width: 125px;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+	#navBanner .thumblist li a {
+		/*padding-bottom: 0;*/
+		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d900274A', endColorstr='#d900274A',GradientType=0 ); /* IE6-9 */	
+		/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#d900274A', endColorstr='#d900274A')"; /* IE8 */ 
+	    background: rgba(0, 35, 74, 0.8);		
+		/* For IE 5.5  7*/
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A);
+		/* For IE 8*/
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A)";
+	}
+	#navBanner .bnrImg {
+		max-width: 100%;
+	}
+	.bnrDesc {
+		padding: 0.7em;
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		height: 27%;
+		width: 100%;
+		background: rgb(0, 35, 74);
+	}
+	#formContainer {
+		width: 32% !important;
+	}
+	#formWrapper ul li .inp {
+		width: 97% !important;
+	}
+}
+@media screen and (max-width: 775px) {
+	#gridTop {
+		padding: 0;
+	}
+	#navBanner {
+		width: 100%;
+		background: #00A4E4;
+	}
+	.bnrDesc .Custom_Bold {
+		font-size: 20px;
+	}
+	.bnrDesc {
+		width: 35%;
+		top: 0;
+		padding: 2em;
+		margin: 2em;
+	}
+	#formContainer {
+		width: 100% !important;
+	}
+	#thumbnail, .thumbholder, #navBanner .thumblist, #navBanner .thumbholder {
+		width: 100% !important;
+		bottom: 0;
+	}
+	#formWrapper ul {
+		padding: 3em !important;
+		text-align: center;
+	}
+	#formWrapper ul li, #formWrapper h6 {
+		text-align: center;
+	}
+	#formWrapper ul li {
+		height: 50px !important;
+	}
+	#formWrapper ul li .inp {
+		float: none !important;
+		height: 24px;
+		width: 54% !important;
+	}
+}
+@media screen and (max-width: 775px) {
+	#navBanner .bnrImg {
+		max-width: 100%;
+	}
+	.bnrDesc {
+		padding: 1.1em;
+		margin: 0;
+		top: auto;
+		position: absolute;
+		bottom: 0;
+		height: 30%;
+		width: 100%;
+		background: rgb(0, 35, 74);
+		box-sizing:border-box;
+	}
+	#thumbnail, .thumbholder, #navBanner .thumblist, #navBanner .thumbholder {
+		top: 0 !important;
+		width: 125px !important;
+		left: 0;
+	}
+	#navBanner .thumblist li {
+		float: right;
+		width: 125px;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+	#navBanner .thumblist li a {
+		/*padding-bottom: 0;*/
+		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d900274A', endColorstr='#d900274A',GradientType=0 ); /* IE6-9 */	
+		/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#d900274A', endColorstr='#d900274A')"; /* IE8 */ 
+	    background: rgba(0, 35, 74, 0.8);		
+		/* For IE 5.5  7*/
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A);
+		/* For IE 8*/
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A)";
+	}
+}
+@media screen and (max-width: 675px) {
+	#topMenu, ul#navListPanel li a.navLink {
+		height: 40px;
+	}
+	ul#navListPanel li a.navLink span {
+		padding: 1em;
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 575px) {
+	#siteSearch {
+		display: none;
+	}
+	#topLinks {
+		display: none;
+	}
+	#mastHead {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 525px) {
+	ul#navListPanel {
+		border-bottom: 10px double #fff; 
+	    border-top: 3px solid #fff; 
+	    content:"";
+	    height: 5px; 
+	    width:30px;
+	    margin: 1em;
+	}
+	ul#navListPanel li {
+		display: none;
+	}
+	#logo {
+		margin: auto;
+	}
 }

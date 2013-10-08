@@ -1057,7 +1057,6 @@ h6 a.Custom_Bold:active {
 
 /* Start=> popup related styles */
 #navBanner #popBg {
-	background: #005984;
 	opacity: 0.67;
 	filter: alpha(opacity=67);		
 	width: 100%;
@@ -1065,6 +1064,7 @@ h6 a.Custom_Bold:active {
 	position: absolute;
 	z-index: 11;
 	display: none;
+	background: #00A4E4;
 }
 #navBanner #popContent {
 	text-align: center;
