@@ -2,6 +2,7 @@
 	#body_wrapper {
 		width: 100%;
 		padding: 0;
+		height: 100%;
 	}
 	body {
 		padding: 0 10px;
@@ -15,6 +16,7 @@
 	}
 	#gridTop {
 		padding-right: 50px;
+		height: 95%;
 	}
 	.bnrDesc .Custom_Bold {
 		font-size: 17px;
@@ -22,41 +24,21 @@
 	#navBanner .bannerSection {
 		height: 100%;
 	}
-}
-@media screen and (min-width: 775px) and (max-width: 930px) {
-	#thumbnail, .thumbholder, #navBanner .thumblist, #navBanner .thumbholder {
-		top: 0 !important;
-		width: 125px !important;
-		left: 0;
+	.bnrDesc {
+		width: 50%;
+	}
+	#navBanner .thumblist li a span {
+		display: none;
 	}
 	#navBanner .thumblist li {
-		float: right;
-		width: 125px;
-		padding: 0;
-		margin-bottom: 5px;
+		height: 45px;
+		width: 45px;
 	}
-	#navBanner .thumblist li a {
-		/*padding-bottom: 0;*/
-		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d900274A', endColorstr='#d900274A',GradientType=0 ); /* IE6-9 */	
-		/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#d900274A', endColorstr='#d900274A')"; /* IE8 */ 
-	    background: rgba(0, 35, 74, 0.8);		
-		/* For IE 5.5  7*/
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A);
-		/* For IE 8*/
-		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A)";
+	#navBanner #thumbnail {
+		top: 399px;
 	}
-	#navBanner .bnrImg {
-		max-width: 100%;
-	}
-	.bnrDesc {
-		padding: 0.7em;
-		margin: 0;
-		position: absolute;
-		bottom: 0;
-		height: 27%;
-		width: 100%;
-		background: rgb(0, 35, 74);
-	}
+}
+@media screen and (min-width: 775px) and (max-width: 930px) {
 	#formContainer {
 		width: 32% !important;
 	}
@@ -84,10 +66,6 @@
 	#formContainer {
 		width: 100% !important;
 	}
-	#thumbnail, .thumbholder, #navBanner .thumblist, #navBanner .thumbholder {
-		width: 100% !important;
-		bottom: 0;
-	}
 	#formWrapper ul {
 		padding: 3em !important;
 		text-align: center;
@@ -103,51 +81,11 @@
 		height: 24px;
 		width: 54% !important;
 	}
-}
-@media screen and (max-width: 775px) {
 	#navBanner .bnrImg {
 		max-width: 100%;
 	}
-	.bnrDesc {
-		padding: 1.1em;
-		margin: 0;
-		top: auto;
-		position: absolute;
+	#navBanner #thumbnail {
 		bottom: 0;
-		height: 30%;
-		width: 100%;
-		background: rgb(0, 35, 74);
-		box-sizing:border-box;
-	}
-	#thumbnail, .thumbholder, #navBanner .thumblist, #navBanner .thumbholder {
-		top: 0 !important;
-		width: 125px !important;
-		left: 0;
-	}
-	#navBanner .thumblist li {
-		float: right;
-		width: 125px;
-		padding: 0;
-		margin-bottom: 5px;
-	}
-	#navBanner .thumblist li a {
-		/*padding-bottom: 0;*/
-		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d900274A', endColorstr='#d900274A',GradientType=0 ); /* IE6-9 */	
-		/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#d900274A', endColorstr='#d900274A')"; /* IE8 */ 
-	    background: rgba(0, 35, 74, 0.8);		
-		/* For IE 5.5  7*/
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A);
-		/* For IE 8*/
-		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d900274A, endColorstr=#d900274A)";
-	}
-}
-@media screen and (max-width: 675px) {
-	#topMenu, ul#navListPanel li a.navLink {
-		height: 40px;
-	}
-	ul#navListPanel li a.navLink span {
-		padding: 1em;
-		font-size: 16px;
 	}
 }
 @media screen and (max-width: 575px) {
@@ -159,6 +97,11 @@
 	}
 	#mastHead {
 		text-align: center;
+	}
+	#logo {
+		width: 100%;
+		text-align: center;
+		margin: 0;
 	}
 }
 @media screen and (max-width: 525px) {
