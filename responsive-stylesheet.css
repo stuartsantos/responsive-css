@@ -8,7 +8,7 @@
 		padding: 0 10px;
 	}
 	#navBanner {
-		width: 65%;		
+		width: 65%;
 	}
 	#gridTop #formContainer {
 		position: relative;
@@ -16,13 +16,9 @@
 	}
 	#gridTop {
 		padding-right: 50px;
-		height: 95%;
 	}
 	.bnrDesc .Custom_Bold {
 		font-size: 17px;
-	}
-	#navBanner .bannerSection {
-		height: 100%;
 	}
 	.bnrDesc {
 		width: 50%;
