@@ -63,7 +63,7 @@ html, body, #gridCenter {
 body {
   font-size: 15px !important;
 }
-.centerModule h1, .centerModule h2, .centerModule h3, .centerModule h4, .centerModule h5, .centerModule h6 {
+.centerModule h1, .centerModule h2, .centerModule h3, .centerModule h4, .centerModule h5, .centerModule h6, .newsSectionDtls h3 {
   padding: 5px 0;
 }
 .centerModule h1 {
@@ -75,7 +75,7 @@ body {
   color: #0073ae;
   font-size: 20px;
 }
-.centerModule h3 {
+.centerModule h3, .newsSectionDtls h3 {
   color: #e36f1e;
   font-size: 18px;
 }
@@ -842,8 +842,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4FC6E5', EndC
   z-index: 3;
   display:none;
 }
+#navListPanel li {
+  margin-right: 0;
+}
 #navListPanel a {
   padding-bottom:23px\9;
+  padding-right: 15px;
 }
 #navBanner .carBackBtn {
   display:none;
