@@ -1,0 +1,46 @@
+#gridTop {
+	height: 442px !important;
+}
+#navBanner {
+	float: left;
+}
+#navBanner .thumbholder, #navBanner .thumblist, #thumbnail{
+	width: 635px !important;
+	overflow:hidden;
+	margin-top:0;
+}
+.hasBanner #grid_wrapper {
+	margin-top: 0 !important;
+}
+.rightNonBulleted .moduleTitle {
+	text-transform: none;
+	background: none;
+	color: #0073AE !important;
+	font-size: 18px;
+	font-family: 'aig_futura_medregular', Arial, Helvetica, sans-serif !important;
+}
+#gridRight .nonBulleted li {
+	padding: 0;
+}
+.rightNonBulleted .moduleTitle, .centerModule .moduleTitle, .leftModule .moduleTitle {
+	padding: 0 0 10px !important;
+	line-height: 150%
+}
+.rightNonBulleted {
+	line-height: 150%;
+}
+#gridRight {
+	width: 300px;
+	padding-left: 40px;
+}
+.centerModule ul.nonBulleted {
+	margin: 0 !important;
+}
+#gridLeft {
+	line-height: 150% !important;
+}
+@media screen and (max-width: 34.063em) {
+	.leftModule .moduleTitle, .centerModule .moduleTitle, .rightModule .moduleTitle {
+    	font-size: 2em !important;
+  	}
+}
