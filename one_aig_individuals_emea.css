@@ -1236,6 +1236,12 @@ color: #005984;
   ul.utiNavSec li a {
     float: none;
   }
+  #rightTopMenu {
+    position: static;
+    text-align: center;
+    padding-top: .5em;
+    width: 100%;
+  }
 }
 /*545px*/
 @media screen and (max-width: 34.063em) {
