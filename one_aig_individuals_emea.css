@@ -926,6 +926,7 @@ ul.utiNavSec li a {
 #gridTop #formContainer {
     float: left !important;
     margin-bottom: 0 !important;
+    width: 271px !important;
 }
 #navBanner .bnrDesc {
     background: rgba(0, 35, 74, 0.8);
