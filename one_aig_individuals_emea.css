@@ -722,16 +722,14 @@ li.Custom_Bold {
   background-color: transparent;
 }
 *:first-child+html #navBanner .thumblist li.noImage, *:first-child+html #navBanner .thumblist li.hover {
-  /*background: rgb(225,225,225);
-  background:rgba(225,225,225,.8);*/
-  background:url("//www.aig.com/chartisint/internet/common/files/bg-thumb1_tcm801-552757.png") repeat-x scroll 0 -75px !important;
-    color: #005984 !important;
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.8);
+  color: #005984 !important;
   border:none;
 }
 #navBanner .thumblist li.on a, #navBanner .thumblist li.hover a {
-  /*background: rgb(225,225,225);
-  background:rgba(225,225,225,.8);*/
-  background:url("//www.aig.com/chartisint/internet/common/files/bg-thumb1_tcm801-552757.png") repeat-x scroll 0 -75px !important;
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.8);
   color:#005984 !important;
   border:none;
 }
@@ -887,13 +885,17 @@ ul.utiNavSec li a {
   list-style: circle outside none;
 }
 .detailAccModule .active {
-  background:#0494D0 url('/Chartis/internet/US/en/aig_accor_arr_up_tcm3171-442355.gif') no-repeat 96% 20px;
+  background:#50c8e8 url('/Chartis/internet/US/en/pier_acc_down_tcm3171-555196.gif') no-repeat 96.5% 20px;
 }
 #gridCenter .detailAccModule .deActive .odd{
-  background: #E4E4E5 url('/Chartis/internet/US/en/aig_accor_arr_down_tcm3171-442356.gif') no-repeat 96% 20px;
+  background: #E4E4E5 url('/Chartis/internet/US/en/pier_acc_up_tcm3171-555195.gif') no-repeat 96.5% 20px;
 }
 #gridCenter .detailAccModule .deActive .even{
-  background:#EBEBEC url('/Chartis/internet/US/en/aig_accor_arr_down2_tcm3171-442357.gif') no-repeat 96% 20px;
+  background:#EBEBEC url('/Chartis/internet/US/en/pier_acc_up_tcm3171-555195.gif') no-repeat 96.5% 20px;
+}
+#gridCenter .detailAccModule > ul, #cocSingleLink {
+  border-bottom: 1px solid #fff;
+  margin: 3px 0;
 }
 .leftModule h4 {
   font-size:18px;
@@ -926,16 +928,15 @@ ul.utiNavSec li a {
 #gridTop #formContainer {
     float: left !important;
     margin-bottom: 0 !important;
-    width: 271px !important;
 }
 #navBanner .bnrDesc {
-    background: rgba(0, 35, 74, 0.8);
+    background: rgba(0, 89, 132, 0.8);
     font-size: 30px;
     line-height: 1;
 }
 .bnrDesc {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d900274A', endColorstr='#d900274A',GradientType=0 ); /* IE6-9 */
-    background: rgba(0, 35, 74, 0.8);
+    background: rgba(0, 89, 132, 0.8);
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 400;
@@ -947,7 +948,8 @@ ul.utiNavSec li a {
     z-index: 3;
 }
 #navBanner .thumblist li a {
-    background:transparent url("//www.aig.com/chartisint/internet/common/files/bg-thumb1_tcm801-552757.png") repeat-x scroll 0 0 !important;
+    background: rgb(0, 89, 132);
+    background: rgba(0, 89, 132, .8); 
     border: 0 none;
     color: #FFFFFF !important;
     display: block;
@@ -1201,7 +1203,7 @@ color: #005984;
   }
 
   header {
-    height: 100%;
+    height: auto;
     padding-bottom: 1em;
   }
 

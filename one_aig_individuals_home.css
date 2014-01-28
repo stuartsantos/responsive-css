@@ -42,6 +42,14 @@
 #gridTop #formContainer {
 	width: 271px;
 }
+.rightModule a img:hover, .leftModule a img:hover {
+	box-shadow: 0 0 5px #7a7a7a;
+	-webkit-transition: all ease .25s;
+	-moz-transition: all ease .25s;
+	-ms-transition: all ease .25s;
+	-o-transition: all ease .25s;
+	transition: all ease .25s;
+}
 @media screen and (max-width: 34.063em) {
 	.leftModule .moduleTitle, .centerModule .moduleTitle, .rightModule .moduleTitle {
     	font-size: 2em !important;
