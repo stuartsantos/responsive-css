@@ -226,10 +226,9 @@ ul.bigBulleted li a.Custom_Bold {
   padding: 0;
 }
 #gridRight .rightModule {
-  background: none repeat scroll 0 0 #E5E5E5;
   border: 0 none;
   clear: both;
-  padding: 27px;
+  padding: 16px 0;
   width:auto;
 }
 .hasBanner #gridRight .rightModule {
@@ -357,9 +356,6 @@ li.Custom_Bold {
 /*border-left: medium none !important;
   float: none;
   height: 132px;*/
-}
-#gridRight a:link, #gridRight a:visited, #gridRight a:active {
-  color:#005984;
 }
 #gridRight a:hover {
   text-decoration:underline;
