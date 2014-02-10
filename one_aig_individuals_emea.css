@@ -630,7 +630,7 @@ li.Custom_Bold {
   font-family: 'aig_futurabold', Helvetica, Arial, sans-serif;
 }
 .sectionTitle span {
-  float: left;
+  float: none;
   font-size: 14px;
   font-family: 'aig_futura_medregular', Arial, Helvetica, sans-serif;
   line-height: 1.25em;
@@ -642,11 +642,13 @@ li.Custom_Bold {
   color: #645c5c;
   font-size: inherit;
 }
+.newsSection .sectionTitle h3, .archiveSection .sectionTitle h3, .insightSection .sectionTitle h3 {
+  display: block;
+}
 .sectionTitle a {
-  float: right;
+  float: none;
   font-size: 20px !important;
   font-weight: normal;
-  margin-left: 25px;
   color: #40bbeb;
 }
 #tab1Dtls.sectionTitle a#backToList :hover {
@@ -909,7 +911,6 @@ ul.utiNavSec li a {
   display: block;
   font-weight: 500;
   height: auto;
-  padding-top:30px;
 }
 #gridRight .nonBulleted li {
   /* padding-left: 10px; */
@@ -1228,7 +1229,9 @@ display:none;
   #navListPanel, #navListPanel ul {
     height: auto;
     padding-left: 0;
-	position:static;
+    position:static;
+    height: 100%;
+    background: #B0B0B0 !important;
   }
 
   #navListPanel li {
@@ -1239,8 +1242,7 @@ display:none;
     height: auto;
   }
   ul#navListPanel li a {
-    text-align: center;
-    padding: 5px;
+    padding: 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1316,6 +1318,10 @@ display:none;
 	left: -200px;
 	top: 0;
   display: block;
+  height: 100%;
+  }
+  ul#navListPanel li.tabOnActive a.navLink, #navListPanel a, ul#navListPanel li a.navLink:hover, ul#navListPanel li.selected a.navLink {
+    background: #B0B0B0;
   }
 }
 /*545px*/
