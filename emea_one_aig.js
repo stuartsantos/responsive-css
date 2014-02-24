@@ -1476,3 +1476,12 @@ $(function() {
       });
      
      });
+
+/*------------Clickjacking ---------------
+-----------------------------------------------*/
+document.getElementsByTagName('html')[0].style.display='none';
+if( self == top ) {
+document.documentElement.style.display = 'block' ;
+} else {
+top.location = self.location ;
+}

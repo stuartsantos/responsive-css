@@ -57,11 +57,9 @@ Font Futura PT : Copyright © ParaType, 2012. All rights reserved.
   font-weight: normal !important;
   font-weight: 500 !important;
 }
-html, body, #gridCenter {
-  height: 100% !important;
-}
 body {
-  font-size: 15px !important;
+  font-size: 1em !important;
+  font-family: 'aig_futuraregular', Helvetica, Arial, sans-serif;
 }
 .centerModule h1, .centerModule h2, .centerModule h3, .centerModule h4, .centerModule h5, .centerModule h6, .newsSectionDtls h3 {
   padding: 5px 0;
@@ -93,6 +91,13 @@ body {
 }
 #gridRight h6 {
   font-size:12pt;
+}
+em {
+  font-family: 'aig_futura_regularitalic', Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+strong {
+  font-size: .95em;
 }
 #gridRight {
   float: right;
@@ -210,7 +215,6 @@ h6 a.Custom_Bold:active {
 ul.nonBulleted {
   list-style: none;/* margin: 0 0 0 10px;
   padding: 5px 5px 10px 0;*/
-  height: 100% !important;
 }
 ul.bigBulleted li a.Custom_Bold {
   width:90%;
@@ -268,6 +272,9 @@ ul.bigBulleted li a.Custom_Bold {
 #pageBanner .pageTitle, #searchBanner .pageTitle {
   line-height:38px;
 }
+#pageTitle .pageName, #pageTitle h2, .centerModule h3, .centerModule h2, .centerModule h5 {
+  font-family: 'aig_futura_medregular', Helvetica, Arial, sans-serif;
+}
 .centerModule ul li {
 /*padding: 5px 0 5px 1px !important;*/
 }
@@ -317,6 +324,10 @@ tr.even td, tr.even th, tr.odd th {
 }
 tr.odd td.Custom_Bold {
   background: #D9F5F9;
+}
+th {
+  font-family: 'aig_futura_medregular', Helvetica, Arial, sans-serif;
+  font-size: inherit;
 }
 #pageTitle img {
   border: 5px solid #00a4e6;
@@ -763,7 +774,7 @@ li.Custom_Bold {
 }
 .bnrDesc {
   color: #FFFFFF;
-  font-family: 'aig_futura_medregular', Arial, Helvetica, sans-serif;
+  font-family: 'aig_futuraregular', Arial, Helvetica, sans-serif;
   font-size: 15px;
   left: 20px;
   position: absolute;
@@ -869,14 +880,18 @@ ul.utiNavSec li a {
 #gridCenter .detailAccModule .detModTitle, #cocSingleLink ul li {
   margin-left: -30px;
   padding: 10px 40px 20px 10px;
+  font-size: .95em;
 }
 #gridCenter .detailAccModule .detModDesc {
   margin-left:-30px;
+  font-size: 1em;
+  font-family: inherit;
 }
 #gridCenter .detailAccModule .detModDesc a {
   font-family:'aig_futurabold', Arial, Helvetica, sans-serif;
   color: #40bbeb;
   text-decoration: none;
+  font-size: inherit;
 }
 #gridCenter .detailAccModule .detModDesc ul li {
   list-style: disc outside none;
@@ -972,7 +987,6 @@ color: #005984;
 @media screen and (max-width: 61.25em) {
   body {
     padding: 0 10px;
-    height: 100%;
     -webkit-text-size-adjust: 100%;
   }
 
@@ -998,7 +1012,6 @@ color: #005984;
 
   body.hasBanner #gridLeft, body.hasBanner #gridRight, body.hasBanner #gridCenter {
     width: 30%;
-    height: 100% !important;
   }
 
   body.hasBanner #grid_wrapper img {
@@ -1098,7 +1111,7 @@ color: #005984;
 @media screen and (max-width: 45.625em) {
   #formContainer {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
   }
 
   #gridTop {
@@ -1116,11 +1129,7 @@ color: #005984;
   body.hasBanner #gridLeft, body.hasBanner #gridRight, body.hasBanner #gridCenter {
     width: 100%;
     padding: 0;
-    height: 100% !important;
-  }
-
-  ul.nonBulleted {
-    height: 100% !important;
+    height: auto !important;
   }
 
   ul.nonBulleted li h4 {
@@ -1130,6 +1139,10 @@ color: #005984;
   ul.nonBulleted li img {
     display: block;
     margin: auto;
+  }
+
+  ul.nonBulleted {
+    height: auto !important;
   }
 
   .moduleBtm .moduleTitle, .centerModule .moduleTitle, .rightModule .moduleTitle, .leftModule .moduleTitle, #pageTitle h1, .tabModule .moduleTitle {
@@ -1150,7 +1163,7 @@ color: #005984;
 
   #gridRight {
     width: 100%;
-    height: 100% !important;
+    height: auto !important;
   }
 
   #gridCenter {
@@ -1214,6 +1227,9 @@ color: #005984;
 #siteSearch form{
 display:none;
 }
+.mobileMenu #siteSearch {
+  margin-left: 10px;
+}
 #topMenu {
     right: 100%;
     width: 200px;
@@ -1256,7 +1272,6 @@ display:none;
   }
 
   header {
-    height: 100%;
     padding-bottom: 1em;
   }
 
@@ -1348,7 +1363,6 @@ display:none;
 
   #navBanner .bannerSection {
     width: 100%;
-    height: 100%;
   }
 
   .bnrDesc {
@@ -1360,7 +1374,7 @@ display:none;
   }
 
   #pageBanner {
-    height: 100%;
+    height: auto;
   }
 
   #pageBanner .pageTitle {
@@ -1375,10 +1389,6 @@ display:none;
 
   #pageBanner img {
     display: none;
-  }
-
-  #gridRight {
-    height: 100% !important;
   }
 
   #gridCenter {

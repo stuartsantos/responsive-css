@@ -1,0 +1,6 @@
+/* 980px */
+@media screen and (max-width: 61.25em) {
+	#body_wrapper {
+		width: 980px !important;
+	}
+}
