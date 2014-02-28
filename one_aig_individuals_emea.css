@@ -371,6 +371,9 @@ li.Custom_Bold {
 #gridRight a:hover {
   text-decoration:underline;
 }
+#logo a img {
+  max-width: 111px;
+}
 /* START => LIST and TAB View related styles 
 ----------------------------------------------- */
 #jumpLink {
