@@ -99,6 +99,9 @@ em {
 strong {
   font-size: .95em;
 }
+em strong {
+  font-family: 'aig_futura_bolditalic', Helvetica, Arial, sans-serif;
+}
 #gridRight {
   float: right;
   overflow: hidden !important;
@@ -178,8 +181,12 @@ h6 a.Custom_Bold:active {
   background-color: #87B92E;
   border: 1px solid #597A1F;
 }
+#topLinks ul li:last-child a {
+  border-right: none;
+}
 #gridCenter {
   padding-top:0px;
+  height: auto !important;
 }
 #grid_wrapper {
   padding-top: 25px;
@@ -260,7 +267,6 @@ ul.bigBulleted li a.Custom_Bold {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 0 0 27px;
 }
 .relatedDownload li, .relatedTopic li {
   width: 100%;
@@ -671,10 +677,13 @@ li.Custom_Bold {
 /* END => LIST and TAB View related styles 
 ----------------------------------------------- */
 #siteSearch input.txtMedium {
-/*width: 158px;
-  height: 18px;
-  *height:14px;
-  *line-height:10px;*/
+  width: 228px;
+  padding: 6px 4px 6px 7px;
+}
+#imageSearch{
+  display: inline;
+  margin-top: 20px;
+  max-width: 30px;
 }
 #navBanner {
   height:368px;
@@ -882,7 +891,7 @@ ul.utiNavSec li a {
 }
 #gridCenter .detailAccModule .detModTitle, #cocSingleLink ul li {
   margin-left: -30px;
-  padding: 10px 40px 20px 10px;
+  padding: 10px 50px 20px 10px;
   font-size: .95em;
 }
 #gridCenter .detailAccModule .detModDesc {

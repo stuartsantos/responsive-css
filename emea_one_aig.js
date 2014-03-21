@@ -19,7 +19,6 @@
 		// });
     $('<p class="copyrightTxt">' + $('#siteFooter').text() + '</p>').prependTo('#footerSection');
     $('#siteFooter').hide();
-    $('#siteSearch .txtMedium').val('Search');
     $('.detailAccModule .detModTitle:odd').addClass('odd');
     $('.detailAccModule .detModTitle:even').addClass('even');
     $('#logobanner2').insertAfter('#siteSearch');
