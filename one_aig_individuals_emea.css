@@ -377,8 +377,11 @@ li.Custom_Bold {
 #gridRight a:hover {
   text-decoration:underline;
 }
-#logo a img {
+#logo img {
   max-width: 111px;
+}
+#logobanner2 {
+  display: none;
 }
 /* START => LIST and TAB View related styles 
 ----------------------------------------------- */
@@ -1018,8 +1021,9 @@ color: #005984;
 
   #gridTop {
     padding-right: 50px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   body.hasBanner #gridLeft, body.hasBanner #gridRight, body.hasBanner #gridCenter {
@@ -1054,8 +1058,9 @@ color: #005984;
   }
 
   #formWrapper ul li .inp {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100% !important;
   }
 
@@ -1178,10 +1183,6 @@ color: #005984;
     height: auto !important;
   }
 
-  #gridCenter {
-    display: inline;
-  }
-
   #pageBanner {
     width: 100%;
   }
@@ -1211,6 +1212,50 @@ color: #005984;
   #gridDetailNav {
     padding-top: 25px;
   }
+  #grid_wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #gridLeft {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    width: 100%;
+    float: none;
+  }
+  #gridRight {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3; 
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+  #gridCenter {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+  .centerModule {
+    padding-bottom: 0;
+  }
 }
 /*565px*/
 @media screen and (max-width: 35.313em) {
@@ -1228,13 +1273,20 @@ color: #005984;
   content: "";
   position: absolute;
   left: 0;
-  top: 0.25em;
+  top: 0;
   width: 2.5em;
-  height: 0.25em;
-  background: #666;
-  box-shadow: 
-    0 .65em 0 0 #666,
-    0 1.25em 0 0 #666;
+  border-top: .2em solid #666;
+}
+#siteSearch:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5em;
+  height: .5em;
+  border-top: .2em solid #666;
+  border-bottom: .2em solid #666;
+  margin-top: .7em;
 }
 #siteSearch form{
 display:none;
@@ -1291,6 +1343,16 @@ display:none;
     width: 100%;
     text-align: center;
     margin: 0;
+  }
+
+  #logobanner2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2.2em;
+  }
+  #logobanner2 img {
+    max-width: 55px;
   }
 
   .hasBanner #gridTop {
@@ -1392,8 +1454,9 @@ display:none;
   #pageBanner .pageTitle {
     display: inline-block;
     position: static;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
     padding: .5em;
     text-align: center;
     width: 100%;
@@ -1401,10 +1464,6 @@ display:none;
 
   #pageBanner img {
     display: none;
-  }
-
-  #gridCenter {
-    display: inline;
   }
 
   .centerModule table.customClass td {

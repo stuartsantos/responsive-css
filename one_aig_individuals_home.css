@@ -50,6 +50,13 @@
 	-o-transition: all ease .25s;
 	transition: all ease .25s;
 }
+.centerModule {
+	margin-bottom: 0;
+}
+.hasBanner #gridRight .rightModule {
+	margin-bottom: 0 !important;
+	padding-bottom: 20px;
+}
 @media screen and (max-width: 34.063em) {
 	.leftModule .moduleTitle, .centerModule .moduleTitle, .rightModule .moduleTitle {
     	font-size: 2em !important;
