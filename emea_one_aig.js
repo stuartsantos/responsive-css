@@ -1287,7 +1287,6 @@ function thumbSection(thumID) {
 $(document).ready(function () {
    $("#pageBanner").insertAfter("#mastHead");
    $("#topMenu").insertAfter("#mastHead");
-   equalHeight($(".formcontainer, .nonBulleted"));
 });
 function equalHeight(group) {
       var obj = $.browser.msie;
@@ -1315,6 +1314,13 @@ function equalHeight(group) {
 		$(this).css('height',tallest);
 	});	
 }
+
+/*-------------- Last-Child -------------------
+-----------------------------------------------*/
+
+$(document).ready(function(){
+    $(".nonBulleted li:last-child").addClass('last-child')
+});
 
 /*-------------- Viewport ---------------------
 -----------------------------------------------*/
@@ -1455,7 +1461,7 @@ $(function() {
       // Create default option selected
       $("<option />", {
          "selected": "selected",
-         "value"   : "",
+         "value"   : ""
       }).appendTo(".catNav select");
 
       $(".catNav li.active span").clone().appendTo("option[selected]");
