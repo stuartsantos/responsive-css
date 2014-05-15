@@ -105,8 +105,8 @@ em strong {
 #gridRight {
   float: right;
   overflow: hidden !important;
-  padding: 0 0 30px 40px;
-  width: 300px;
+  padding: 0 0 30px 40px
+;  width: 300px;
   /* background: #E6E7E9; */
 }
 .Custom_Bold {
@@ -658,6 +658,9 @@ li.Custom_Bold {
   font-family: 'aig_futura_medregular', Arial, Helvetica, sans-serif;
   line-height: 1.25em;
 }
+.sectionTitle h3 {
+  font-family: 'aig_futura_medregular', Arial, Helvetica, sans-serif;
+}
 .sectionTitle span.date {
   color: #e36f1e;
 }
@@ -1028,6 +1031,7 @@ color: #005984;
 
   body.hasBanner #gridLeft, body.hasBanner #gridRight, body.hasBanner #gridCenter {
     width: 30%;
+    height: auto !important;
   }
 
   body.hasBanner #grid_wrapper img {
@@ -1129,29 +1133,22 @@ color: #005984;
     width: 55%;
   }
 
+  .centerModule table.customClass td {
+    display: inline;
+  }
+
+  .centerModule table.customClass h2 {
+    text-align: center;
+  }
+
+  .centerModule table.customClass img {
+    display: block;
+    margin: auto;
+  }
+
   #pageBanner .pageTitle {
     width: 40%;
   }
-}
-/*730px*/
-@media screen and (max-width: 45.625em) {
-  #formContainer {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  #gridTop {
-    padding-right: 0;
-  }
-
-  ul#navListPanel li a.navLink span {
-    font-size: 16px;
-  }
-
-  #navListPanel a {
-    padding: 21.5px 10px;
-  }
-
   body.hasBanner #gridLeft, body.hasBanner #gridRight, body.hasBanner #gridCenter {
     width: 100%;
     padding: 0;
@@ -1173,6 +1170,33 @@ color: #005984;
 
   .moduleBtm .moduleTitle, .centerModule .moduleTitle, .rightModule .moduleTitle, .leftModule .moduleTitle, #pageTitle h1, .tabModule .moduleTitle {
     text-align: center;
+  }
+
+  #navBanner .bnrDesc {
+    padding: 20px;
+    width: 75%;
+  }
+  ul.nonBulleted li div, ul.nonBulleted li{
+    text-align: center;
+  }
+}
+/*730px*/
+@media screen and (max-width: 45.625em) {
+  #formContainer {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #gridTop {
+    padding-right: 0;
+  }
+
+  ul#navListPanel li a.navLink span {
+    font-size: 16px;
+  }
+
+  #navListPanel a {
+    padding: 21.5px 10px;
   }
 
   #formWrapper ul li select.inp {
@@ -1455,7 +1479,7 @@ display:none;
   }
 
   #navBanner .bnrDesc {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   #navBanner #thumbnail {
@@ -1491,19 +1515,6 @@ display:none;
 
   #pageBanner img {
     display: none;
-  }
-
-  .centerModule table.customClass td {
-    display: inline;
-  }
-
-  .centerModule table.customClass h2 {
-    text-align: center;
-  }
-
-  .centerModule table.customClass img {
-    display: block;
-    margin: auto;
   }
 
   #gridDetailNav .catNav {

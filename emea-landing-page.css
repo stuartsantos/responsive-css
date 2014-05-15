@@ -128,7 +128,7 @@ header #logo img {
   text-shadow: 0 0 10px #000;
   padding-left: 3%;
   padding-right: 3%;
-  padding-top: 5%;
+  padding-top: 50px;
   height: 270px;
   text-align: center;
   width: 500px;
@@ -226,7 +226,8 @@ h3 {
   display: block !important;
 }
 img.bnrImg {
-  margin-left: 2%;
+  margin: auto;
+  display: block;
 }
 .nonBulleted img {
   display: block;
@@ -235,7 +236,7 @@ img.bnrImg {
 /*1100px*/
 @media screen and (max-width: 68.750em) {
   img.bnrImg {
-    margin-left: -8%;
+    margin-left: -15%;
   }
 }
 /*800px*/
@@ -274,5 +275,8 @@ img.bnrImg {
     margin-right: 0;
     left: auto;
     padding: 0;
+  }
+  img.bnrImg {
+    margin-left: -50%;
   }
 }
