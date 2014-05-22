@@ -132,20 +132,26 @@ header #logo img {
   height: 270px;
   text-align: center;
   width: 500px;
-  background: transparent url(viewfinder_tcm3914-593729.png) 0 0 no-repeat;
+  background: transparent url(/aig/internet/ZA/en/viewfinder_tcm3914-593729.png) 0 0 no-repeat;
 }
 #gridTop .whiteFinder {
   display: none;
 }
-.centerModule, #siteFooter {
+.centerModule, #siteFooter, #pageFooter {
   width: 90%;
   margin: 0 auto;
 }
 .centerModule {
   font-size: 1.75em;
   margin-top: 2em;
-  min-height: 500px;
+  padding-bottom: 2em;
   border-bottom: 1px solid #ddd;
+}
+.centerModule:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 .pageName {
   font-size: 1.5em;
@@ -218,6 +224,7 @@ strong {
 h3 {
   font-family: aig_futura_medregular, Helvetica, Arial, sans-serif;
   color: #50c8e8;
+  text-align: center;
 }
 #gridCenter {
   height: auto !important;
