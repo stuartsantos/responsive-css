@@ -701,6 +701,8 @@ ul#navListPanel li a.navLink:hover, ul#navListPanel li.selected a.navLink {
   z-index: 10;
   background:none;
   opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 #navBanner .thumblist li {
   list-style: none;
@@ -759,16 +761,6 @@ ul#navListPanel li a.navLink:hover, ul#navListPanel li.selected a.navLink {
 }
 #siteFooter a{
   color:#fff;
-}
-.bnrDesc {
-  color: #FFFFFF;
-  font-family: 'aig_futuraregular', Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  left: 20px;
-  position: absolute;
-  top: 15px;
-  width: 400px;
-  z-index: 3;
 }
 h1 {
   font-family: 'aig_futura_medregular', Arial, Helvetica, sans-serif;
@@ -931,23 +923,23 @@ ul.utiNavSec li a:hover {
     float: left !important;
     margin-bottom: 0 !important;
 }
-#navBanner .bnrDesc {
-    background: rgba(0, 89, 132, 0.8);
-    font-size: 30px;
-    line-height: 1;
-}
 .bnrDesc {
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d900274A', endColorstr='#d900274A',GradientType=0 ); /* IE6-9 */
-    background: rgba(0, 89, 132, 0.8);
-    color: #FFFFFF;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ffffff', endColorstr='#d9ffffff',GradientType=0 ); /* IE6-9 */
+    background: rgba(255, 255, 255, 0.8);
+    color: #00a4e4;
     font-size: 15px;
     font-weight: 400;
     margin: 36px;
-    max-height: 245px;
+    max-height: 270px;
     padding: 36px;
     position: absolute;
     width: 63%;
     z-index: 3;
+    font-size: 30px;
+    line-height: 1;
+    font-family: 'aig_futuraregular', Arial, Helvetica, sans-serif;
+    left: 20px;
+    top: 15px;
 }
 #navBanner .thumblist li a {
     background:transparent url("//www.aig.com/chartisint/internet/common/files/bg-thumb1_tcm801-552757.png") repeat-x scroll 0 0;
@@ -1155,6 +1147,9 @@ color: #005984;
   #formContainer {
     width: 100% !important;
     height: auto !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   #gridTop {
@@ -1276,6 +1271,10 @@ color: #005984;
   }
   #footerSecDetails .thumbholder, #footerSecDetails .thumblist>li {
     min-height: 75px;
+  }
+  #navBanner {
+    width: 100%;
+    background-color: transparent;
   }
 }
 /*565px*/

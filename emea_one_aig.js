@@ -1490,3 +1490,16 @@ document.documentElement.style.display = 'block' ;
 } else {
 top.location = self.location ;
 }
+
+/*------------Carousel Fix ---------------
+-----------------------------------------------*/
+$(document).ready(function(){
+    $(".defaultBannerSection").remove(); //remove default banner
+
+    $("li#carImg01").removeClass("noImage").addClass("on"); //make first slide default
+
+    //remove last 2 br tags
+    for (var i = 0; i < 2; i++) {
+        $(".bnrDesc br:last-of-type").remove();
+    }
+});
