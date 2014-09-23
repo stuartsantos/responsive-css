@@ -273,6 +273,15 @@ ul.bigBulleted li a.Custom_Bold {
   box-sizing: border-box;
 }
 
+#gridTop {
+  height: 193px;
+}
+
+#gridTop #pageBanner {
+  margin: 130px 65px 20px 0;
+  height: 128px;
+}
+
 #pageBanner .pageTitle, #searchBanner .pageTitle {
   line-height:38px;
 }
@@ -840,11 +849,11 @@ h1 {
 }
 .bnrDesc ul {
   list-style:disc !important;
-  padding:10px 0 0 20px;
+  padding:10px 0 10px 20px;
 }
 .bnrDesc ul li {
-  line-height: 18px;
-  padding-left: 5px;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 ul.utiNavSec li a {
   color: #40BBEB !important;

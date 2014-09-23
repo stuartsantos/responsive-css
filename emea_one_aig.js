@@ -157,7 +157,7 @@ $(document).ready(function(){
         });
        thumbSection("thumbnail");
         //carousal("#navBanner #thumbnail", 5);
-        $(".bnrDesc a").click(function () {
+        $(".bnrDesc .thumblist a").click(function () {
             $("#thumbnail ul li").removeClass("on");
             $(".bannerSection").hide();
             $(".defaultBannerSection").show()
@@ -1285,7 +1285,6 @@ function thumbSection(thumID) {
     })
 };
 $(document).ready(function () {
-   $("#pageBanner").insertAfter("#mastHead");
    $("#topMenu").insertAfter("#mastHead");
 });
 function equalHeight(group) {
@@ -1503,3 +1502,26 @@ $(document).ready(function(){
         $(".bnrDesc br:last-of-type").remove();
     }
 });
+
+/*---------Consumer/Commercial Redirect --------
+-----------------------------------------------*/
+
+$(document).ready(function() {
+    var cookie = document.cookie;
+    var referrer = document.referrer;
+    var commercialURL = $(".utiNavSec li:eq(1) a").attr("href");
+
+    if (referrer.indexOf("https://www.aig.co.it") === 0 && cookie.indexOf("segment=commercial") >= 0) {
+        document.cookie="segment=consumer";
+    }
+
+    else if (referrer.indexOf("https://www.aig.co.it") !== 0 && cookie.indexOf("segment=commercial") >= 0) {
+        location.replace(commercialURL);
+    }
+
+    else {
+        document.cookie="segment=consumer";
+    };
+});
+
+
