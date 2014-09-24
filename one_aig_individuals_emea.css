@@ -1513,18 +1513,22 @@ display:none;
     float: none;
     display: block;
   }
+
+  #gridTop, #gridTop #pageBanner {
+    height: auto;
+  }
 }
-/* mobile overlay css */
-#bg {
-    bottom: 0;
-    display: none;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    opacity: 0.4;
-    overflow: visible;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  /* mobile overlay css */
+  #bg {
+      bottom: 0;
+      display: none;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      opacity: 0.4;
+      overflow: visible;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
 }

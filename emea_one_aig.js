@@ -1511,11 +1511,11 @@ $(document).ready(function() {
     var referrer = document.referrer;
     var commercialURL = $(".utiNavSec li:eq(1) a").attr("href");
 
-    if (referrer.indexOf("aig") === 0 && cookie.indexOf("segment=commercial") >= 0) {
+    if (referrer.indexOf("aig") >= 0 && cookie.indexOf("segment=commercial") >= 0) {
         document.cookie="segment=consumer";
     }
 
-    else if (referrer.indexOf("aig") !== 0 && cookie.indexOf("segment=commercial") >= 0) {
+    else if (cookie.indexOf("segment=commercial") >= 0) {
         location.replace(commercialURL);
     }
 
