@@ -1,3 +1,18 @@
+ /*--------------- IE CSS -----------------
+-----------------------------------------------*/
+
+function isIE () {
+    var myNav = navigator.userAgent.toLowerCase();
+    return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+
+if (isIE() < 9 && isIE() != false) {
+    $("head").append('<link rel="stylesheet" type="text/css" href="https://www.aig.co.za/aig/internet/ZA/en/ie_tcm3914-640953.css" />');
+}
+
+/*-------------------End IE CSS-----------------
+-----------------------------------------------*/
+
  $(document).ready(function () {
    //$("ul#navListPanel li div").css({'opacity': '0.90', 'filter':'alpha(opacity=90)'}); // topMenu Opacity
    //$("#navContainer #navListPanel li.tabOnActive #subNav3").show()
@@ -978,6 +993,20 @@ if ( (fileLink.href.indexOf('javascript'.toLowerCase()) != 0) && (fileLink.href.
             } // end for loop for a tags
         } // end if document a tags
 
+        if (document.getElementsByTagName('iframe')) {
+                    for (var i = 0; (iframeSrc = document.getElementsByTagName('iframe')[i]); i++) {
+                        if (iframeSrc.src.indexOf('?') != -1) { 
+// if the link has already querystring then append value with &
+                            iframeSrc.src = iframeSrc.src + '&' + queryStr;
+                        } else { 
+// if the link does not have querystring then add querystring
+if (iframeSrc.src != "" || iframeSrc.src != "#" || iframeSrc.src.indexOf('javascript'.toLowerCase()) > 0 || iframeSrc.src.indexOf('mailto'.toLowerCase()) > 0) {
+                                iframeSrc.src = iframeSrc.src + '?' + queryStr;
+                            }
+                        }
+                    } // end for loop for iframe tags
+        } // end if document iframe tags
+
     } // end if queryStr
 }
 // call the javascript function after window loads
@@ -1499,7 +1528,7 @@ $(document).ready(function(){
 
     //remove last 2 br tags
     for (var i = 0; i < 2; i++) {
-        $(".bnrDesc br:last-of-type").remove();
+        $("a.carBackBtn").prev().remove();
     }
 });
 
@@ -1510,18 +1539,20 @@ $(document).ready(function() {
     var cookie = document.cookie;
     var referrer = document.referrer;
     var commercialURL = $(".utiNavSec li:eq(1) a").attr("href");
+    var consumerURL = $(".utiNavSec li:eq(0) a").attr("href");
+    var page = document.URL;
+    var pageID = page.substr(-11);
 
     if (referrer.indexOf("aig") >= 0 && cookie.indexOf("segment=commercial") >= 0) {
         document.cookie="segment=consumer";
     }
 
-    else if (cookie.indexOf("segment=commercial") >= 0) {
-        location.replace(commercialURL);
+        else if (consumerURL.indexOf(pageID) >= 0 && cookie.indexOf("segment=commercial") >= 0) {
+            location.replace(commercialURL);
     }
 
     else {
         document.cookie="segment=consumer";
     };
 });
-
 
