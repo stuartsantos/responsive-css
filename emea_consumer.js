@@ -1532,27 +1532,4 @@ $(document).ready(function(){
     }
 });
 
-/*---------Consumer/Commercial Redirect --------
------------------------------------------------*/
-
-$(document).ready(function() {
-    var cookie = document.cookie;
-    var referrer = document.referrer;
-    var commercialURL = $(".utiNavSec li:eq(1) a").attr("href");
-    var consumerURL = $(".utiNavSec li:eq(0) a").attr("href");
-    var page = document.URL;
-    var pageID = page.substr(-11);
-
-    if (referrer.indexOf("aig") >= 0 && cookie.indexOf("segment=commercial") >= 0) {
-        document.cookie="segment=consumer";
-    }
-
-        else if (consumerURL.indexOf(pageID) >= 0 && cookie.indexOf("segment=commercial") >= 0) {
-            location.replace(commercialURL);
-    }
-
-    else {
-        document.cookie="segment=consumer";
-    };
-});
 

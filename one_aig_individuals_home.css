@@ -77,8 +77,11 @@
 	margin-bottom: 0 !important;
 	padding-bottom: 20px;
 }
-#gridCenter .centerModule .nonBulleted li ul li {
+#gridCenter .centerModule .nonBulleted li ul li, #gridLeft .leftModule .nonBulleted li ul li {
 	list-style-type: disc;
+}
+#gridLeft .leftModule .nonBulleted li ul li {
+	margin-left: 25px;
 }
 #gridRight .rightNonBulleted .nonBulleted li ul {
 	padding-left: 30px;
